@@ -38,7 +38,7 @@
     
             /* Borders for visual clarity */
             .container > div {
-                border: 1px dashed #888;
+                border: 1px dashed #F3F3FA;
             }
     
             /* Grid Items */
@@ -49,10 +49,29 @@
                 text-align: center;
                 padding: 20px;
             }
+
+            .cart-info {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+
+            .cart-info .info-box {
+                background-color: #f9f9f9;
+                padding: 8px 12px;
+                border-radius: 5px;
+                font-size: 14px;
+                flex: 1;
+                min-width: 200px;
+                text-align: center;
+                border: 1px solid #ddd;
+            }
     
             .left {
                 grid-area: left;
-                background-color: #5e4b3b3b;
+                background-color:#F3F3FA;
                 padding: 20px;
             }
     
@@ -66,14 +85,14 @@
     
             .right {
                 grid-area: right;
-                background-color:  #5e4b3b3b;
+                background-color: #F3F3FA;
                 padding: 20px;
             }
     
             .footer {
                 grid-area: footer;
-                background-color: #333;
-                color: white;
+                background-color: #F0F0F0;
+                color: #6C6C6C;
                 text-align: center;
                 padding: 20px;
             }
@@ -111,7 +130,7 @@
             }
     
             .product .buy-btn {
-                background-color: #007bff;
+                background-color:   #BEBEBE;
                 color: white;
                 padding: 10px;
                 border: none;
@@ -175,19 +194,15 @@
         <div class="container">
             <div class="header">
                 <h1>Clothing Store</h1>
-                <nav>
-                    <a href="#" style="color: #7B7B7B; margin: 0 15px;">Home</a>
-                    <a href="#" style="color: #7B7B7B; margin: 0 15px;">Shop</a>
-                    <a href="#" style="color: #7B7B7B; margin: 0 15px;">Contact</a>
-                </nav>
+                
+                
             </div>
     
             <div class="left">
-                <h3>Categories</h3>
+                <h3>類別</h3>
                 <ul>
-                    <li>Men</li>
-                    <li>Women</li>
-                    <li>Accessories</li>
+                    <li>All</li>
+                    <li>NEW</li>
                     <li>Sale</li>
                 </ul>
             </div>
@@ -196,49 +211,87 @@
                 <!-- Product 1 -->
                 <div class="product">
                     <img src="https://cotwohk.com/cdn/shop/files/2_5aadc1d2-87cb-441e-bd39-968872c6c73f_grande.jpg?v=1714050742" alt="Shirt">
-                    <h3>Basic Shirt</h3>
-                    <p>Comfortable cotton shirt in various colors.</p>
-                    <div class="price">$450/件</div>
+                    <h3>小熊大學t</h3>
+                    <p>舒適純棉小熊大學t</p>
+                    <div class="price">$320/件</div>
                     <button class="buy-btn">Add to Cart</button>
                 </div>
     
                 <!-- Product 2 -->
                 <div class="product">
-                    <img src="https://via.placeholder.com/200" alt="Jacket">
-                    <h3>Stylish Jacket</h3>
-                    <p>Perfect for cold weather and style.</p>
-                    <div class="price">$59.99</div>
+                    <img src="https://gw.alicdn.com/imgextra/i1/871885690/O1CN016bb9rV1ru4M8UUIFg_!!871885690.jpg_Q75.jpg_.webp" alt="Jacket">
+                    <h3>雪紡蛋糕裙</h3>
+                    <p>夏季必備氣質蛋糕裙</p>
+                    <div class="price">$450/件</div>
                     <button class="buy-btn">Add to Cart</button>
                 </div>
     
                 <!-- Product 3 -->
                 <div class="product">
-                    <img src="https://via.placeholder.com/200" alt="Pants">
-                    <h3>Denim Pants</h3>
-                    <p>Classic blue denim pants.</p>
-                    <div class="price">$49.99</div>
+                    <img src="https://i3.momoshop.com.tw/1692386892/goodsimg/0011/757/109/11757109_R_m.webp" alt="Pants">
+                    <h3>高腰牛仔褲(三色)</h3>
+                    <p>韓版顯瘦高腰牛仔褲</p>
+                    <div class="price">$380/件</div>
                     <button class="buy-btn">Add to Cart</button>
                 </div>
-    
+
                 <!-- Product 4 -->
                 <div class="product">
-                    <img src="https://via.placeholder.com/200" alt="Dress">
-                    <h3>Summer Dress</h3>
-                    <p>Light and breezy summer dress.</p>
-                    <div class="price">$39.99</div>
+                    <img src="https://shoplineimg.com/5dd241731d0db7001e8daeb7/650c0dceac1845001a29fb25/800x.png?" alt="Dress">
+                    <h3>短版牛仔外套</h3>
+                    <p>韓版現貨單寧短版外套</p>
+                    <div class="price">$490/件</div>
                     <button class="buy-btn">Add to Cart</button>
                 </div>
+
+                <!-- Product 5 -->
+                <div class="product">
+                    <img src="https://gw.alicdn.com/imgextra/i2/3165069688/O1CN01T3cP1a2LR9vDAX2RQ_!!0-item_pic.jpg_Q75.jpg_.webp" alt="Pants">
+                    <h3>顯瘦短版牛仔裙(三色)</h3>
+                    <p>高腰顯瘦單寧短裙</p>
+                    <div class="price">$380/件</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product">
+                    <img src="https://down-tw.img.susercontent.com/file/tw-11134201-7r98u-lssu2jta3gbkdb" alt="Pants">
+                    <h3>春夏短版t</h3>
+                    <p>純棉短版t恤</p>
+                    <div class="price">$290/件</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product">
+                    <img src="https://down-tw.img.susercontent.com/file/tw-11134207-7qula-limnuk8j4gxg48" alt="Pants">
+                    <h3>舒適抽繩工裝褲</h3>
+                    <p>酷妹必入款!抽繩百搭工裝褲(三色)</p>
+                    <div class="price">$290/件</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product">
+                    <img src="https://down-tw.img.susercontent.com/file/96affa4e7cc62d7593f4aa4e63b511e4_tn" alt="Pants">
+                    <h3>舒適薄罩衫(多色)</h3>
+                    <p>夏季必備薄襯衫</p>
+                    <div class="price">$235/件</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+
             </div>
     
             <div class="right">
-                <div class="cart">
-                    <h3>Shopping Cart</h3>
-                    <ul>
-                        <li><span>Basic Shirt</span><span>$29.99</span></li>
-                        <li><span>Stylish Jacket</span><span>$59.99</span></li>
-                    </ul>
-                    <div class="total">Total: $89.98</div>
-                    <button class="checkout-btn">Proceed to Checkout</button>
+                <div class="cart-info">
+                    <h3>配送資訊</h3>
+                
+                        <div class="info-box">本店提供超商貨到付款、店到店服務</span></li>
+                        <div class="info-box">運費</div>超商貨到付款$75</span><span>店到店
+                        $45</div>
+                        <div class="info-box">本店滿1500元免運</div>
+                    
+                    
                 </div>
             </div>
     
